@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Current {
+public class Obj {
     private double current;
 
     public void increaseCurrent(double add) {

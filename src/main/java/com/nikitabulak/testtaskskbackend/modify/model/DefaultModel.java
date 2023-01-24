@@ -24,5 +24,5 @@ public class DefaultModel {
     private int id;
     @Type(type = "json")
     @Column(columnDefinition = "jsonb")
-    private Current obj;
+    private Obj obj;
 }

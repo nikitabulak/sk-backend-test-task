@@ -18,9 +18,7 @@ public class ErrorHandler {
     @ExceptionHandler({TeapotException.class})
     @ResponseStatus(HttpStatus.I_AM_A_TEAPOT)
     public ErrorResponse handleNotAvailableException(final RuntimeException e) {
-        return new ErrorResponse(
-                e.getMessage()
-        );
+        return new ErrorResponse(e.getMessage(), e);
     }
 }
 

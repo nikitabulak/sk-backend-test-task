@@ -9,8 +9,4 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Obj {
     private double current;
-
-    public void increaseCurrent(double add) {
-        current += add;
-    }
 }

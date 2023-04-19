@@ -25,4 +25,8 @@ public class DefaultModel {
     @Type(type = "json")
     @Column(columnDefinition = "jsonb")
     private Obj obj;
+
+    public void add(double value) {
+        obj.setCurrent(obj.getCurrent() + value);
+    }
 }

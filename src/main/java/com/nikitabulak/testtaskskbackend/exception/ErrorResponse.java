@@ -2,13 +2,14 @@ package com.nikitabulak.testtaskskbackend.exception;
 
 public class ErrorResponse {
     private final String error;
-    private final Throwable cause;
+    private final Exception cause;
 
     public ErrorResponse(String error) {
         this.error = error;
         this.cause = null;
     }
-    public ErrorResponse(String error, Throwable cause) {
+
+    public ErrorResponse(String error, Exception cause) {
         this.error = error;
         this.cause = cause;
     }
@@ -16,7 +17,8 @@ public class ErrorResponse {
     public String getError() {
         return error;
     }
-    public Throwable getCause() {
+
+    public Exception getCause() {
         return cause;
     }
 }
